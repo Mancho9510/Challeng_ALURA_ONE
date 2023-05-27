@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge ONE encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Decodificador.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Imagenes/Logo.png" alt="logo de alura">
+        </header>
+        <main>
+            <textarea class="text-area" id="textoI" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <section class="mostrarTexto">
+                <textarea class="mensaje" id="" cols="30" rows="10"></textarea>
+                <div class="Frame5">
+                    <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
+                    <p id="ingresarTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="botonCopiar">
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+            <section class="Frame1">
+                    <img src="Imagenes/bi_exclamation-circle-fill-1.png" alt="Signo de exclamación" id="signoExclamacion">
+                    <p id="espeificacion">Solo letras minúsculas y sin acentos</p>
+            </section>
+            <section class="Frame3">
+                <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <!-- <input type="button" name="encriptar" value="Encriptar" id="encriptar">
+                <input type="button" name="desencriptar" value="Desencriptar" id="desencriptar"> -->                
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright Germán Eduardo Reyes Vasquez</p>
+        </footer>
+        <script src="Decodificador.js"></script>
+    </body>
+</html>
